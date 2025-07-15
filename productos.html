@@ -15,7 +15,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="./images/Le_Creuset_logo-removebg-preview.png" alt="logo de Le Creuset" width="35%"
+            <img src="./images/Le_Creuset_logo-removebg-preview.png" alt="logo de Le Creuset" width="60%"
                 class="imglogo">
         </div>
 
@@ -36,7 +36,13 @@
         </div>
 
     </header>
-
+    <div id="carrito">
+        <h2>Carrito de Compras</h2>
+        <p>Total: $<span id="total-carrito">0</span></p>
+        <ul id="lista-carrito"></ul>
+    </div>
+    <button id="btnPagar">Pagar</button>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
     <main>
         <div class="editorial">
             <h1>Cocinar y Hornear</h1>
@@ -47,20 +53,41 @@
         </div>
         <div class="contenedor">
             <div class="item">
+                <h3>Bandeja de tarta</h3>
                 <img src="./images/bandeja de tarta.png" alt="Imagen de bandeja de tarta tatin de hierro fundido"
                     width="100%">
+                <button class="comprar" data-id="1" data-nombre="Bandeja de tarta tatin de hierro fundido"
+                    data-precio="80.000">Comprar</button>
+                    <p>$80.000</p>
             </div>
             <div class="item">
+                <h3>Cacerola</h3>
                 <img src="./images/cacerola.png" alt="Imagen de cacerola baja de hierro fundido" width="100%">
+                <button class="comprar" data-id="2" data-nombre="Cacerola baja de hierro fundido"
+                    data-precio="90.000">Comprar</button>
+                    <p>$90.000</p>
+
             </div>
             <div class="item">
+                <h3>Olla roja</h3>
                 <img src="./images/olla roja.png" alt="Imagen de cocotte redonda de hierro fundido" width="100%">
+                <button class="comprar" data-id="3" data-nombre="Cocotte redonda de hierro fundido"
+                    data-precio="100.000">Comprar</button>
+                     <p>$100.000</p>
             </div>
             <div class="item">
+                <h3>Sarten redonda</h3>
                 <img src="./images/sarten redonda.png" alt="Imagen de sartén skillet redonda de hierro fundido"
                     width="100%">
+                <button class="comprar" data-id="4" data-nombre="Sartén skillet redonda de hierro fundido"
+                    data-precio="75.000">Comprar</button>
+                     <p>$75.000</p>
+
             </div>
         </div>
+
+
+
 
     </main>
     <footer>
@@ -74,6 +101,8 @@
             <i class="fa-brands fa-youtube"></i>
         </div>
     </footer>
+
+    <script src="./js/tienda.js"></script>
 </body>
 
 
